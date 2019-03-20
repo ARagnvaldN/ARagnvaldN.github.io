@@ -3,23 +3,25 @@
 	<head>
 		<title>{{ page.title }}</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<nav>
     		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about.html">About</a></li>
-        		<li><a href="/cv.html">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
+			{% for item in site.data.navigation %}
+        		<li><a href="{{ item.link }}"> {{ item.name }}</a></li>
+			{% endfor %}
     		</ul>
 		</nav>
 		<div class="container">
 		{{ content }}
 		</div><!-- /.container -->
 		<footer>
-    		<ul>
-        		<li><a href="mailto:a.ragnvald.n@gmail.com">email</a></li>
-        		<li><a href="https://github.com/ARagnvaldN">github.com/ARagnvaldN</a></li>
+    			<ul>
+			<li><a href="https://twitter.com/ARagnvaldN" class="fa fa-twitter"></a></li>
+			<li><a href="mailto:contact@andreasnylund.com" class="fa fa-envelope"></a></li>
+        		<li><a href="https://github.com/ARagnvaldN" class="fa fa-github"></a></li>
+        		<li><a href="https://linkedin.com/in/andreas-nylund-bb002772" class="fa fa-linkedin"></a></li>
 			</ul>
 		</footer>
 	</body>
