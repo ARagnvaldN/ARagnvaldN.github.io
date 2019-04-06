@@ -1,0 +1,140 @@
+---
+---
+$pueblo: #E75A69;
+$gray: #333;
+$footer-height: 4rem;
+
+body {
+    background-color: #333;
+    margin: 30px auto;
+    width: 70%;
+    display: block;
+}
+.wrapper {
+    background-color: #EEE;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 90vh;
+}
+.content {
+    padding-bottom: $footer-height;
+}
+code, pre {
+    font-family: Consolas, Terminal;
+    color: $gray;
+    font-size: medium;
+    overflow-x: auto;
+}
+pre {
+    padding: 20px;
+    background: $gray;
+    color: #f8f8f2;
+    margin: 0 -20px 20px;
+    code {
+        color: #f8f8f2;
+    }
+    li & {
+        margin-left: -60px;
+        padding-left: 60px;
+    }
+}
+nav ul {
+    font-family:'Roboto', 'Arial', 'Sans-Serif';
+    padding: 0px 10px;
+    list-style: none;
+    font-weight: bold;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    height: $footer-height;
+    font-size: 1.5em;
+    background: $pueblo;
+    border-radius: 0px 0px 15px 15px;
+}
+footer ul {
+    font-family:'Roboto', 'Arial', 'Sans-Serif';
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+}
+h1 {
+    padding: 0px 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h2 {
+    padding: 0px 30px;
+    font-size: 1.8em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+p {
+    padding: 0px 40px;
+    font-family: Roboto;
+    font-size: 1em;
+    line-height: 1em;
+    color: #333;
+}
+nav {
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px 10px 2px;
+    background: $pueblo;
+}
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.4em;
+    font-family: Roboto;
+}
+ul.posts li {
+    list-style: none;
+}
+.navitem {
+    color: #f8f8f8;
+    font-size: 1.3em;
+}
+.title {
+    background: $pueblo;
+    font-family: Roboto, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: $pueblo;
+    letter-spacing: .05em;
+    text-shadow: 
+	-1px -1px 0 #FFF,
+	1px -1px 0 #FFF,
+	-1px 1px 0 #FFF,
+	1px 1px 0 #FFF;
+}
+.fa {
+    color: white;
+}
+.fa-github {
+
+}
+.fa:hover {
+    color: $pueblo;
+    text-shadow: 
+	-1px -1px 0 #FFF,
+	1px -1px 0 #FFF,
+	-1px 1px 0 #FFF,
+	1px 1px 0 #FFF;
+}
+.copy {
+    font-family: Roboto, sans-serif;
+    font-size: 0.6em;
+    color: white; 
+    font-weight: normal;
+}

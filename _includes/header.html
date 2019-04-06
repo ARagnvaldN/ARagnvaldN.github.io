@@ -1,0 +1,12 @@
+<header>
+<nav>
+<ul>
+	<li><a href="/" class="title">Andreas Nylund</a></li>
+	{% for item in site.data.navigation %}
+	<li><a href="{{ item.link }}" class="navitem">
+		{{ item.name }}
+	</a></li>
+	{% endfor %}
+</ul>
+</nav>
+</header>

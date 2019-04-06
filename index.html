@@ -3,6 +3,15 @@ layout: default
 title: Andreas Nylund
 ---
 <div class="blurb">
-	<h1>Hi</h1>
-		<p>Work in progress.</p>
+	<h1>Hello</h1>
+		<p>I am a father, Engineer, hacker, nerd, writer and comic artist.</p>
+		<p>Welcome to the place where I put all the stuff that I find interesting.</p>
+		<p></p>
 </div><!-- /.blurb -->
+
+	<ul class="posts">
+
+	{% for post in site.posts %}
+		<li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	{% endfor %}
+	</ul>
