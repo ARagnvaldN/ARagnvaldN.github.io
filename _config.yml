@@ -1,2 +1,4 @@
 name: Andreas Nylund
 highlighter: rouge
+
+theme: jekyll-theme-modernist
