@@ -120,17 +120,10 @@ ul.posts li {
 }
 .fa {
     color: white;
+    align: center;
 }
 .fa-github {
 
-}
-.fa:hover {
-    color: $pueblo;
-    text-shadow: 
-	-1px -1px 0 #FFF,
-	1px -1px 0 #FFF,
-	-1px 1px 0 #FFF,
-	1px 1px 0 #FFF;
 }
 .copy {
     font-family: Roboto, sans-serif;

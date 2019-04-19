@@ -1,0 +1,66 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$my-red: #E75A69;
+$my-darker-red: #E91A29;
+$my-blue: #4D7FD1;
+$my-darker-blue: #375C99;
+
+header {
+    background: $my-blue;
+  ul {
+    background: $my-darker-blue;
+    background: linear_gradient($my-red, $my-darker-blue);
+    right: 20px;
+    text-align: center;
+    box-shadow: none;
+
+
+    li {
+       width: 50px;
+       border-right: none;
+       font-size: 1.4em;
+    }
+    li + li {
+       width: 50px;
+       border-right: 1px solid #FBB;
+       border-left: none;
+       font-size: 1.2em;
+    }
+    li + li + li {
+       width: 50px;
+       border-left: none;
+       font-size: 1.4em;
+    }
+    li + li + li + li {
+       width: 50px;
+       border-left: 1px solid #FBB;
+    }
+
+  }
+}
+.fa {
+    color: white;
+}
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: $my-blue;
+    letter-spacing: .05em;
+    text-shadow: 
+	-1px -1px 0 #FFF,
+	1px -1px 0 #FFF,
+	-1px 1px 0 #FFF,
+	1px 1px 0 #FFF;
+}
+footer {
+  ul li{
+    list-style:none;
+    display: inline;
+    float: right;
+    padding-left: 10px;
+  }
+
+}
